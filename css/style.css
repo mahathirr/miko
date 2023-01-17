@@ -146,3 +146,25 @@ h4{
 .about-text h2{
     
 }
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    position:fixed; left:0; right:0; bottom:0; height:0px;
+}
+
+footer p{
+    color: white;
+    margin: -10px;
+}
+
+footer a{
+    color: white;
+}
+footer a:hover{
+    opacity: .5;
+    background-color: transparent;
+}
