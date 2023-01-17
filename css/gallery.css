@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span{
+    color: rgb(200, 0, 0);
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: rgb(200, 0, 0);
+    transition: .4s;
+}
+
+.btn{
+    background-color: rgb(200, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    grid-gap: 0.5rem;
+    margin: 70px auto auto auto;
+  }
+  .image-container .image {
+    position: relative;
+    padding-bottom: 100%;
+  }
+  .image-container .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .image-container .image img:nth-of-type(1) {
+    filter: grayscale(1) brightness(40%);
+  }
+  .image-container .image img:nth-of-type(2) {
+    -webkit-clip-path: var(--clip-start);
+            clip-path: var(--clip-start);
+    transition: -webkit-clip-path 0.5s;
+    transition: clip-path 0.5s;
+    transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+  }
+  .image-container .image:hover img:nth-of-type(2) {
+    -webkit-clip-path: var(--clip-end);
+            clip-path: var(--clip-end);
+  }
+  
+  
